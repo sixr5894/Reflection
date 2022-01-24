@@ -8,13 +8,14 @@ namespace Task1
 {
     public class Container
     {
+
         List<Type> _attributes = new List<Type>() { typeof(ExportAttribute), typeof(ImportAttribute), typeof(ImportConstructorAttribute) };
         private Assembly _asm;
         private List<Type> _types = new List<Type>();
         private void SetDefVals()
         {
-            Assembly _asm = null;
-            List<Type> _types = new List<Type>();
+            _asm = null;
+            _types = new List<Type>();
         }
         public void AddAssembly(Assembly assembly)
         {
